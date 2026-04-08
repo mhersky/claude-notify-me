@@ -43,7 +43,7 @@ $customOnly = @($cfg.customVoices | Where-Object { $_ -and ($_ -notin $systemVoi
 $allVoices  = $systemVoices + $customOnly
 
 Write-Host ""
-Write-Host "Claude Voice — Choose your TTS voice:" -ForegroundColor Cyan
+Write-Host "claude-notify-me - Choose your TTS voice:" -ForegroundColor Cyan
 Write-Host ""
 
 $i = 1
@@ -74,5 +74,5 @@ $cfg.voice = $selected
     customVoices = $cfg.customVoices
 } | ConvertTo-Json | Set-Content -Path $configFile -Encoding UTF8
 
-Invoke-Speak "Hi, I'm ready to assist you."
+Invoke-Speak "Hello. Ready to assist you."
 Write-Host "Voice set to: $selected" -ForegroundColor Green
