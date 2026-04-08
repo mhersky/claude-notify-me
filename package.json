@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Voice notifications plugin for Claude Code — hear when tasks complete",
   "bin": {
-    "claude-notify-me": "./bin/claude-notify-me.js"
+    "claude-notify-me": "bin/claude-notify-me.js"
   },
   "files": [
     "bin/",
@@ -27,6 +27,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mhersky/claude-notify-me.git"
+    "url": "git+https://github.com/mhersky/claude-notify-me.git"
   }
 }

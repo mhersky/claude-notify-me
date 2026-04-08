@@ -1,11 +1,12 @@
 <!-- claude-notify-me -->
 ## claude-notify-me Plugin
 
-Voice notifications are active. After completing a **substantial task** (code changes, file operations, builds, research), write a brief description to `~/.claude/last-activity.txt`:
+Voice notifications are active. After completing a **substantial task** (code changes, file operations, builds, research), write a brief description to `~/.claude/last-activity.txt` using the **Write tool** (not Bash):
 
-```
-echo -n "short description of what was done" > ~/.claude/last-activity.txt
-```
+1. First **Read** `~/.claude/last-activity.txt` (required before Write; file always exists with a default value)
+2. Then **Write** with:
+   - file_path: full expanded path to `~/.claude/last-activity.txt`
+   - content: `short description of what was done` (no trailing newline needed)
 
 The Stop hook will read it and speak it aloud. Keep descriptions under 200 characters. Do **not** write for simple text replies, questions, or short answers.
 
