@@ -1,0 +1,6 @@
+# Enforce LF for shell scripts — CRLF will break them on macOS/Linux
+*.sh    text eol=lf
+*.ps1   text eol=crlf
+
+# All other text files use platform default
+*       text=auto

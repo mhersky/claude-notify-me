@@ -1,0 +1,32 @@
+{
+  "name": "claude-notify-me",
+  "version": "1.0.0",
+  "description": "Voice notifications plugin for Claude Code — hear when tasks complete",
+  "bin": {
+    "claude-notify-me": "./bin/claude-notify-me.js"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "scripts/",
+    "templates/"
+  ],
+  "keywords": [
+    "claude",
+    "claude-code",
+    "tts",
+    "voice",
+    "notifications",
+    "hooks",
+    "anthropic"
+  ],
+  "author": "mhersky",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mhersky/claude-notify-me.git"
+  }
+}
